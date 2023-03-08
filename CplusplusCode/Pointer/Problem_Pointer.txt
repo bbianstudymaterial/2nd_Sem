@@ -1,0 +1,30 @@
+     Problems wtih Pointers
+1. Unintialized Pointer.
+   int x = 10;
+   int *p;
+   a. p = &x; //Point some know values.
+   b. p = (int *)0*5638;
+   c. p = new int[5]; //Allocate some memory in heap.
+
+2. Memory Leak
+   When you are allocating memory after using that you must deallocate memory, if we don't deallocate it leads to memory leak , if it is done for more number of times we may run out of memory.
+   delete[]P;
+   p = NULL;
+   or p = 0;
+   or p = nullptr;
+
+3. Dangling pointer.
+   void main(){
+    int *p = new int[5];
+    ..
+    ..
+    fun(p);
+    x cout<<*p; //the pointer is already deleted in the function, so now it is a Dangling pointer.
+   }
+   void fun(int *q){
+    .
+    .
+    .
+    delete[]q;
+   }
+

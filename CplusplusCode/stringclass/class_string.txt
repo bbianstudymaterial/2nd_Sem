@@ -1,0 +1,98 @@
+ Class String: 
+
+ 1. s.length();
+       string str = "Hello";
+       cout<<str.length()<<endl; //String should not be null
+       cout<<str<<endl;
+
+ 2. s.size();
+       string str="Hello";
+       cout<<str.size()<<endl;
+       cout<<str<<endl;
+ 3. s.capacity(); //It will give the capacity of the string declared.
+       string str="Hello";
+       cout<<str.capacity()<<endl;
+ 4. s.resize(); 
+       string str="Hello";
+       str.resize(50);
+       cout<<str.capacity()<<endl;
+ 5. s.max_size();
+        string str="Hello";
+        cout<<str.max_size()<<endl;
+ 6. s.clear();
+        string str="Hello";
+        str.clear();
+        cout<<str.length()<<endl;
+ 7. s.empty();
+
+ Class String
+1. s.append("World")--It will be store at the end of the hello.
+          string str = "Hello, ";
+          cout<<str.capacity()<<endl;
+          str.append(" How are you? "); // It will added at the end of the       Hello.
+          cout<<str.length()<<" "<<str.capacity()<<endl;
+2. s.insert(3,"kk) -- 
+               string str ="hello";
+               str.insert(3,"kk");
+               Output str= helkklo
+
+    s.insert(3,"Apple",2)--
+            Output= helAple
+3. s.replace(3,5,"aa) --
+             string str="Programming"
+             s.replace(3,4,"kk");
+
+4. erase() - It will erase the string.
+         string str="Hello";
+         str.erase();
+         cout<<str<<endl
+5. push_back() - It will insert a character at the end of a string
+         string str="Programming";
+         str.push_back('H'); 
+6. pop_back()- It will delete one character from the string.
+       string str="Programming";
+       str.pop_back(); //delete the element character in a string acts as a backspace
+       cout<<str<<endl;
+7. swap() - It will  swap two string.
+         string str1="Programming";
+         string str2="Language";
+         cout<<str1<<endl<<str2<<endl;
+         cout<<"  After Swapping "<<endl;
+         str1.swap(str2);
+         cout<<str1<<endl<<str2<<endl;
+8. s.copy(char, size)- It is used to copy a string of specified length.
+            eg- s.copy(str,s.length()); --(All characters will be copied).
+                or s.copy(str, 4); --(4 character will the copied).
+9. s.find(str)or char -- It is used to find the index of a character or a string.
+            eg- string str = "How are you? ";
+                str.find("are");
+    s.rfind(str)- It is used to find the index of a character or a string form right side.
+
+10. s.find_first_of()- find character searching from first.
+        string str="Hello World"
+        str.find_first_of('l'); Output-2
+        str.find_first_of('l',3); Output-3 It will start searching the character from the index three.
+        str.find_first_of("le"); Output-1 It will find anyone of the character which ever it found first it will print the index.
+11. s.find_last_of() - find character or string searching from last.
+        string str = "Hello World";
+        cout<<str.find_last_of('l'); 
+          //Output- 9
+
+12. str.subst(start,number)- This will take out a part of string.
+    string str-"Programming";
+    str.substr(3);
+    str.substr(3,4);
+
+13. str.compare(s)- It will compare two string. It exactly work as strcmp();
+         string str1="Hello";
+         string str2="Hello";
+         cout<<str1.compare(str2)<<endl;
+
+14. str.at() - It will give the first letter of string.
+         string str = "Holiday";
+         cout<<str.at(4);
+         cout<<endl;
+
+15. front() - It will print the first character of a string.
+
+16. back() - It will print the last letter of a string.
